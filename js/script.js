@@ -12,3 +12,5 @@ const productSlider = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
 });
+
+const headerSubmenu = document.querySelector('.header__submenu');
