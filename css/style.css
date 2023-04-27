@@ -112,3 +112,8 @@ h6 {
   font-weight: 700;
   font-style: normal;
 }
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+}
