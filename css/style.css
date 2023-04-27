@@ -1,10 +1,11 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap");
 /*Обнуление*/
 * {
   padding: 0;
   margin: 0;
   border: 0;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 *,
@@ -90,3 +91,24 @@ h6 {
 }
 
 /*--------------------*/
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../fonts/EuclidCircularA-Light.eot");
+  src: local("Euclid Circular A Light"), local("EuclidCircularA-Light"), url("../fonts/EuclidCircularA-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/EuclidCircularA-Light.woff2") format("woff2"), url("../fonts/EuclidCircularA-Light.woff") format("woff"), url("../fonts/EuclidCircularA-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../fonts/EuclidCircularA-SemiBold.eot");
+  src: local("Euclid Circular A SemiBold"), local("EuclidCircularA-SemiBold"), url("../fonts/EuclidCircularA-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/EuclidCircularA-SemiBold.woff2") format("woff2"), url("../fonts/EuclidCircularA-SemiBold.woff") format("woff"), url("../fonts/EuclidCircularA-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../fonts/EuclidCircularA-Bold.eot");
+  src: local("Euclid Circular A Bold"), local("EuclidCircularA-Bold"), url("../fonts/EuclidCircularA-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/EuclidCircularA-Bold.woff2") format("woff2"), url("../fonts/EuclidCircularA-Bold.woff") format("woff"), url("../fonts/EuclidCircularA-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
