@@ -150,6 +150,7 @@
     &__block {
         background-color: #F2F2F2;
         overflow: hidden;
+        margin: 0px 0px 154px 0px;
     }
 
     &__body {
@@ -281,4 +282,104 @@
     }
 
     &__link {}
+}
+
+.catalog {
+
+    &__block {}
+
+    &__body {
+        max-width: calc(1400px + 2 * 4vw);
+        margin: -20px auto;
+        padding: 0px 4vw;
+    }
+
+    &__row {
+        display: flex;
+        margin: 0 -20px;
+        padding: 20px 0;
+    }
+
+    &__column {
+        flex: 1 1 1/3*100%;
+        padding: 0 20px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        background: #F2F2F2;
+        min-height: 371px;
+        border-radius: 20px;
+        padding: 0px 0px 40px 40px;
+
+        &_first {
+            background-color: #fff;
+        }
+    }
+
+    &__title {
+        color: #292D32;
+        margin: 0px 0px 29px 0px;
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 100%;
+    }
+
+    &__description {
+        color: #838383;
+        margin: 0px 0px 46px 0px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 150%;
+
+    }
+
+    &__subtitle {
+        display: flex;
+        color: #292D32;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 188%;
+        align-items: center;
+    }
+
+    &__link {
+        margin: 0px 12px 0px 0px;
+    }
+
+    &__item-img {
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            max-width: 270px;
+            transition: 0.5s ease;
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__item-amount {
+        color: #838383;
+        margin: 0px 0px 5px 0px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+
+    &__item-name {
+        color: #292D32;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 150%;
+    }
 }

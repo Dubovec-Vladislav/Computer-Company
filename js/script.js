@@ -6,6 +6,10 @@ const productSlider = new Swiper('.slider__products', {
         clickable: true,
     },
 
+    mousewheel: {
+        sensitivity: 1,
+    },
+
     speed: 800,
     loop: true,
 });
