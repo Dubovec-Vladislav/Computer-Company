@@ -5,15 +5,14 @@
     position: relative;
     min-height: 100%;
     overflow: hidden;
-    background-color: #999;
 }
 
 .header {
 
     &__body {
         display: flex;
-        max-width: calc(1400px + 2 * 4vw);
         max-height: 124px;
+        max-width: calc(1400px + 2 * 4vw);
         margin: 0 auto;
         padding: 27px 4vw;
         align-items: center;
@@ -144,4 +143,142 @@
             margin: 0px 0px 0px 0px;
         }
     }
+}
+
+.slider {
+
+    &__block {
+        background-color: #F2F2F2;
+        overflow: hidden;
+    }
+
+    &__body {
+        position: relative;
+        display: flex;
+        max-width: calc(1400px + 2 * 4vw);
+        margin: 0 auto;
+        padding: 74px 4vw 54px 4vw;
+
+        &::before {
+            content: url(../img/background/dell.png);
+            position: absolute;
+            top: 74px;
+            left: 0;
+        }
+
+        &::after {
+            content: url(../img/background/s.png);
+            position: absolute;
+            top: -35.7%;
+            right: -28%;
+        }
+    }
+
+    &__beforecontent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 25px;
+        margin: 0px 105px 0px 0px;
+        padding: 256px 0px 0px 0px;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 2;
+        max-width: 446px;
+        margin: 0px 42px 0px 0px;
+        padding: 156px 0px 0px 0px;
+    }
+
+    &__pretitle {
+        color: #838383;
+        margin: 0px 0px 15px 0px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+
+    &__title {
+        color: #292D32;
+        margin: 0px 0px 60px 0px;
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 59px;
+    }
+
+    &__subtitle {
+        display: flex;
+        color: #292D32;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 188%;
+        align-items: center;
+    }
+
+    &__link {
+        margin: 0px 12px 0px 0px;
+    }
+
+    &__products {
+        position: relative;
+        margin: 0px 100px 0px 0px;
+        max-width: 557px;
+    }
+
+    &__aftercontent {
+        position: relative;
+        z-index: 2;
+        padding: 224px 0px 0px 0px;
+    }
+}
+
+.beforecontent {
+
+    &__text {
+        color: #838383;
+        margin: 0px 0px 16px 0px;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+    }
+
+    &__link {}
+}
+
+.swiper-pagination {
+    display: flex;
+    position: absolute;
+    bottom: 24% !important;
+    left: 65% !important;
+    width: 50% !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-pagination-bullet {
+    background-color: #D0D0D0;
+    width: 6px;
+    height: 6px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #292D32;
+    width: 10px;
+    height: 10px;
+}
+
+.postcontent {
+    &__text {
+        color: #292D32;
+        margin: 0px 0px 82px 0px;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 130%;
+    }
+
+    &__link {}
 }

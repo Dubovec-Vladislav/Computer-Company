@@ -1,4 +1,4 @@
-const productSlider = new Swiper('.swiper', {
+const productSlider = new Swiper('.slider__products', {
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
@@ -6,11 +6,8 @@ const productSlider = new Swiper('.swiper', {
         clickable: true,
     },
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+    speed: 800,
+    loop: true,
 });
 
 const headerSubmenu = document.querySelector('.header__submenu');
