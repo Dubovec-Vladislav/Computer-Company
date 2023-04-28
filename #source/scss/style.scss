@@ -418,11 +418,20 @@
 
     &__header {
         display: flex;
+        min-height: 492px;
+        margin: 0px 0px 48px 0px;
     }
 
-    &__img {}
+    &__img {
+        max-width: 874px;
+
+        img {
+            width: 100%;
+        }
+    }
 
     &__content {
+        max-width: 518px;
         padding: 97px 0px 0px 0px;
     }
 
