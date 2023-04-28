@@ -412,8 +412,6 @@ body._lock {
   .slider__body::before {
     top: 94px;
     left: -40%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
   }
@@ -433,6 +431,8 @@ body._lock {
 }
 @media (max-width: 1150px) {
   .slider__body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 154px 4vw 54px 4vw;
   }
 }

@@ -309,7 +309,6 @@ body {
             @media (max-width:1150px) {
                 top: 94px;
                 left: -40%;
-                flex-wrap: wrap;
                 transform: scale(0.5);
             }
         }
@@ -328,6 +327,7 @@ body {
         }
 
         @media (max-width:1150px) {
+            flex-wrap: wrap;
             padding: 154px 4vw 54px 4vw;
         }
     }
