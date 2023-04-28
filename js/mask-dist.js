@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(()=>{const e=document.querySelector(".phone-inp");IMask(e,{mask:"+{7}(000)000 00 00"})}));

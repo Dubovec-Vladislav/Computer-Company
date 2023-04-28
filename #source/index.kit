@@ -415,15 +415,16 @@
                         <form action="" method="post" class="bid__form">
                             <div class="bid__form-item">
                                 <label for="#" class="bid__form-label">Ваше имя</label>
-                                <input type="text" class="bid__form-input">
+                                <input type="text" class="bid__form-input name-inp" placeholder="Vladislav">
                             </div>
                             <div class="bid__form-item">
                                 <label for="#" class="bid__form-label">Номер телефона</label>
-                                <input type="number" class="bid__form-input">
+                                <input type="text" class="bid__form-input phone-inp" placeholder="+7 (000) 000 00 00">
                             </div>
                             <div class="bid__form-item">
                                 <label for="" class="bid__form-label">Комментарий</label>
-                                <textarea name="#" id="#" cols="#" rows="#" class="bid__form-textarea"></textarea>
+                                <textarea name="#" id="#" cols="#" rows="#" class="bid__form-textarea"
+                                    placeholder="Some comment"></textarea></textarea>
                             </div>
                         </form>
                         <a class="bid__link link">
@@ -533,7 +534,9 @@
     </div>
 </body>
 
+<script src="https://unpkg.com/imask"></script>
 <script src="swiper/swiper-bundle.min.js"></script>
+<script src="js/mask.js"></script>
 <script src="js/script.js"></script>
 
 </html>
