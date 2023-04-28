@@ -7,12 +7,12 @@ const productSlider = new Swiper('.slider__products', {
         clickable: true,
     },
 
-    mousewheel: {
-        sensitivity: 1,
-    },
+    // mousewheel: {
+    //     sensitivity: 1,
+    // },
 
     speed: 800,
-    loop: true,
+    // loop: true,
 });
 // --------------- End slider --------------- //
 
@@ -29,5 +29,18 @@ formButton.addEventListener('click', () => {
     else {
         alert('Произошла валидация формы, ошибки не найдены');
     }
+});
+// --------------- End validation --------------- //
+
+
+// --------------- Burger --------------- //
+const headerBurger = document.querySelector('.header__burger');
+const body = document.querySelector('body');
+const headerList = document.querySelector('.header__list');
+
+headerBurger.addEventListener('click', () => {
+    headerBurger.classList.toggle('_active');
+    body.classList.toggle('_lock');
+    headerList.classList.toggle('_active');
 });
 // --------------- End validation --------------- //
