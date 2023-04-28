@@ -501,8 +501,15 @@ h6 {
 }
 
 .advantages__block {
+  position: relative;
   background-color: #F2F2F2;
   padding: 87px 0 46px 0;
+}
+.advantages__block::before {
+  content: url("../img/background/best-quality.png");
+  position: absolute;
+  top: 152px;
+  left: 10px;
 }
 .advantages__body {
   max-width: calc(1400px + 8vw);
@@ -517,12 +524,16 @@ h6 {
   margin: 0px 0px 48px 0px;
 }
 .advantages__img {
+  position: relative;
+  z-index: 2;
   max-width: 874px;
 }
 .advantages__img img {
   width: 100%;
 }
 .advantages__content {
+  position: relative;
+  z-index: 2;
   max-width: 518px;
   padding: 97px 0px 0px 0px;
 }

@@ -406,8 +406,16 @@
 .advantages {
 
     &__block {
+        position: relative;
         background-color: #F2F2F2;
         padding: 87px 0 46px 0;
+
+        &::before {
+            content: url('../img/background/best-quality.png');
+            position: absolute;
+            top: 152px;
+            left: 10px;
+        }
     }
 
     &__body {
@@ -423,6 +431,8 @@
     }
 
     &__img {
+        position: relative;
+        z-index: 2;
         max-width: 874px;
 
         img {
@@ -431,6 +441,8 @@
     }
 
     &__content {
+        position: relative;
+        z-index: 2;
         max-width: 518px;
         padding: 97px 0px 0px 0px;
     }
