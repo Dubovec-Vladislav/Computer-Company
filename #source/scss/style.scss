@@ -905,6 +905,11 @@ body {
         z-index: 2;
         padding: 0px 0px 0px 30px;
         transform: translate(0px, -150%);
+
+        @media (max-width:1150px) {
+            transform: translate(0px, -125%);
+
+        }
     }
 
     &__item-date {

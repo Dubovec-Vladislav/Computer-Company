@@ -1023,6 +1023,12 @@ body._lock {
   -webkit-transform: translate(0px, -150%);
           transform: translate(0px, -150%);
 }
+@media (max-width: 1150px) {
+  .news__item-description {
+    -webkit-transform: translate(0px, -125%);
+            transform: translate(0px, -125%);
+  }
+}
 .news__item-date {
   position: absolute;
   display: -webkit-box;
