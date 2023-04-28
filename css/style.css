@@ -178,6 +178,7 @@ h6 {
   position: absolute;
   top: calc(100% + 26px);
   left: -61%;
+  z-index: 2;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.75s ease;
@@ -201,6 +202,8 @@ h6 {
 .header__sublist {
   background-color: #fff;
   border-radius: 20px;
+  -webkit-box-shadow: 0 0 5px #d1d1d1;
+          box-shadow: 0 0 5px #d1d1d1;
   overflow: hidden;
 }
 .header__subitem {
@@ -268,7 +271,7 @@ h6 {
   left: 0;
 }
 .slider__body::after {
-  content: url(../img/background/s.png);
+  content: url(../img/background/notebook.png);
   position: absolute;
   top: -35.7%;
   right: -28%;
@@ -321,9 +324,6 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
 }
-.slider__link {
-  margin: 0px 12px 0px 0px;
-}
 .slider__products {
   position: relative;
   margin: 0px 100px 0px 0px;
@@ -347,7 +347,16 @@ h6 {
   font-weight: 300;
   line-height: 19px;
 }
-.swiper-pagination {
+.beforecontent__link img {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.beforecontent__link img:hover {
+  -webkit-transform: translate(0px, 7px);
+          transform: translate(0px, 7px);
+}
+
+.swiper .swiper-pagination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,25 +371,35 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
-.swiper-pagination-bullet {
+.swiper .swiper-pagination-bullet {
   background-color: #D0D0D0;
   width: 6px;
   height: 6px;
 }
-
-.swiper-pagination-bullet-active {
+.swiper .swiper-pagination-bullet-active {
   background-color: #292D32;
   width: 10px;
   height: 10px;
 }
 
-.postcontent__text {
+.aftercontent__text {
   color: #292D32;
   margin: 0px 0px 82px 0px;
   font-size: 25px;
   font-weight: 400;
   line-height: 130%;
+}
+.aftercontent__link img {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.aftercontent__link img:hover {
+  -webkit-transform: translate(7px, 0px);
+          transform: translate(7px, 0px);
+}
+
+.catalog__block {
+  margin: 0px 0px 180px 0px;
 }
 .catalog__body {
   max-width: calc(1400px + 8vw);
@@ -442,9 +461,6 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
 }
-.catalog__link {
-  margin: 0px 12px 0px 0px;
-}
 .catalog__item-img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -482,4 +498,111 @@ h6 {
   font-size: 25px;
   font-weight: 400;
   line-height: 150%;
+}
+
+.advantages__block {
+  background-color: #F2F2F2;
+  padding: 87px 0 46px 0;
+}
+.advantages__body {
+  max-width: calc(1400px + 8vw);
+  margin: 0 auto;
+  padding: 0px 4vw;
+}
+.advantages__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.advantages__content {
+  padding: 97px 0px 0px 0px;
+}
+.advantages__title {
+  color: #292D32;
+  margin: 0px 0px 37px 0px;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 100%;
+}
+.advantages__subtitle {
+  color: #838383;
+  margin: 0px 0px 41px 0px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.advantages__row {
+  margin: 0px -13.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.advantages__column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  padding: 0px 13.5px;
+}
+.advantages__item {
+  background: url("../img/advantages/card-background.png") 0 0 no-repeat;
+  padding: 30px 24px 35px 30px;
+  border-radius: 18px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.advantages__item:hover {
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+}
+.advantages__item-img {
+  background-color: #343A41;
+  width: 70px;
+  height: 70px;
+  margin: 0px 0px 25px 0px;
+  border-radius: 10px;
+}
+.advantages__item-img img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  max-width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.advantages__item-title {
+  color: #FFFFFF;
+  margin: 0px 0px 13px 0px;
+  font-family: "Euclid Circular A";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.advantages__item-desription {
+  color: #B7B7B7;
+  font-family: "Euclid Circular A";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #292D32;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 188%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.link img {
+  margin: 0px 12px 0px 0px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.link img:hover {
+  -webkit-transform: translate(7px, 0%);
+          transform: translate(7px, 0%);
 }
