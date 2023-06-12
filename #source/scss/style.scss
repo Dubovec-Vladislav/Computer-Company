@@ -310,6 +310,10 @@ body {
         background-color: #F2F2F2;
         overflow: hidden;
         margin: 0px 0px 154px 0px;
+
+        @media (max-width:500px) {
+            margin: 0px 0px 40px 0px;
+        }
     }
 
     &__body {
@@ -511,6 +515,10 @@ body {
 
     &__block {
         margin: 0px 0px 180px 0px;
+
+        @media (max-width:500px) {
+            margin: 0px 0px 40px 0px;
+        }
     }
 
     &__body {
@@ -643,6 +651,10 @@ body {
             position: absolute;
             top: 152px;
             left: 10px;
+        }
+
+        @media (max-width:500px) {
+            margin: 0px 0px 40px 0px;
         }
     }
 
@@ -781,6 +793,10 @@ body {
 
     &__block {
         margin: 0px 0px 180px 0px;
+
+        @media (max-width:500px) {
+            margin: 0px 0px 40px 0px;
+        }
     }
 
     &__body {
@@ -975,6 +991,10 @@ body {
     &__block {
         position: relative;
         padding: 0px 0px 167px 0px;
+
+        @media (max-width:500px) {
+            padding: 0px 0px 40px 0px;
+        }
 
         &::before {
             content: '';

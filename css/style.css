@@ -409,6 +409,11 @@ body._lock {
   overflow: hidden;
   margin: 0px 0px 154px 0px;
 }
+@media (max-width: 500px) {
+  .slider__block {
+    margin: 0px 0px 40px 0px;
+  }
+}
 .slider__body {
   position: relative;
   display: -webkit-box;
@@ -615,6 +620,11 @@ body._lock {
 .catalog__block {
   margin: 0px 0px 180px 0px;
 }
+@media (max-width: 500px) {
+  .catalog__block {
+    margin: 0px 0px 40px 0px;
+  }
+}
 .catalog__body {
   max-width: calc(1400px + 8vw);
   margin: -20px auto;
@@ -758,6 +768,11 @@ body._lock {
   top: 152px;
   left: 10px;
 }
+@media (max-width: 500px) {
+  .advantages__block {
+    margin: 0px 0px 40px 0px;
+  }
+}
 .advantages__body {
   max-width: calc(1400px + 8vw);
   margin: 0 auto;
@@ -888,6 +903,11 @@ body._lock {
 
 .news__block {
   margin: 0px 0px 180px 0px;
+}
+@media (max-width: 500px) {
+  .news__block {
+    margin: 0px 0px 40px 0px;
+  }
 }
 .news__body {
   max-width: calc(1400px + 8vw);
@@ -1093,6 +1113,11 @@ body._lock {
 .contacts__block {
   position: relative;
   padding: 0px 0px 167px 0px;
+}
+@media (max-width: 500px) {
+  .contacts__block {
+    padding: 0px 0px 40px 0px;
+  }
 }
 .contacts__block::before {
   content: "";
