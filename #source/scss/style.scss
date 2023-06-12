@@ -472,6 +472,10 @@ body {
         width: 50% !important;
         align-items: center;
         justify-content: center;
+
+        @media (max-width:500px) {
+            display: none;
+        }
     }
 
     .swiper-pagination-bullet {
@@ -547,6 +551,10 @@ body {
             flex: 1 1 100%;
             padding: 10px 20px;
         }
+
+        @media (max-width:500px) {
+            padding: 10px 0px;
+        }
     }
 
     &__item {
@@ -562,7 +570,7 @@ body {
         }
 
         @media (max-width:1150px) {
-            min-height: 271px;
+            min-height: 171px;
             padding: 0px 0px 20px 20px;
         }
     }
@@ -588,6 +596,10 @@ body {
 
         @media (max-width:1150px) {
             font-size: 15px;
+        }
+
+        @media (max-width:500px) {
+            margin: 0px 0px 12px 0px;
         }
     }
 
@@ -654,7 +666,8 @@ body {
         }
 
         @media (max-width:500px) {
-            margin: 0px 0px 40px 0px;
+            margin: 0px 0px 20px 0px;
+            padding: 37px 0 46px 0;
         }
     }
 
@@ -692,6 +705,10 @@ body {
         z-index: 2;
         max-width: 518px;
         padding: 97px 0px 0px 0px;
+
+        @media (max-width:500px) {
+            padding: 47px 0 0px 0;
+        }
     }
 
     &__title {
@@ -811,6 +828,10 @@ body {
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
+
+        @media (max-width:500px) {
+            margin: 0px 0px 35px 0px;
+        }
     }
 
     &__content {}
@@ -993,7 +1014,7 @@ body {
         padding: 0px 0px 167px 0px;
 
         @media (max-width:500px) {
-            padding: 0px 0px 40px 0px;
+            padding: 0px 0px 0px 0px;
         }
 
         &::before {
@@ -1012,6 +1033,8 @@ body {
             position: absolute;
             bottom: 0;
             left: 0;
+
+
         }
     }
 
@@ -1046,12 +1069,19 @@ body {
                 top: 80%;
                 right: 5%;
             }
+
+            @media (max-width:550px) {
+                top: 65%;
+            }
         }
 
         @media (max-width:1150px) {
             flex: 1 1 100%;
             padding: 100px 30px 111px 30px;
+        }
 
+        @media (max-width:500px) {
+            padding: 50px 30px 45px 30px;
         }
     }
 
@@ -1131,13 +1161,19 @@ body {
         @media (max-width:1150px) {
             padding: 100px 30px 103px 30px;
         }
+
+        @media (max-width:500px) {
+            padding: 50px 30px 45px 30px;
+        }
     }
 }
 
 .bid {
 
     &__title {
+        position: relative;
         color: #FFFFFF;
+        z-index: 1;
         margin: 0px 0px 18px 0px;
         font-size: 50px;
         font-weight: 400;
@@ -1241,6 +1277,10 @@ body {
         max-width: calc(1400px + 2 * 4vw);
         margin: 0 auto;
         padding: 60px 4vw 40px 4vw;
+
+        @media (max-width:500px) {
+            padding: 20px 4vw 40px 4vw;
+        }
     }
 
     &__content {
@@ -1260,7 +1300,11 @@ body {
             background-color: #E5E5E5;
         }
 
-        @media (max-width:1150px) {
+        @media (max-width:500px) {
+            padding: 0px 0px 0px 0px;
+        }
+
+        @media (max-width:500px) {
             justify-content: center;
         }
     }
